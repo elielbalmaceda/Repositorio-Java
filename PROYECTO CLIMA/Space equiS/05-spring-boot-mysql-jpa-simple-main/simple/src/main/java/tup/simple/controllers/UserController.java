@@ -172,7 +172,7 @@ public class UserController {
     return resp + "</table>";
   }
 
-  @GetMapping("hola")
+  @GetMapping("")
   public String hola() {
     return "¡Hola, bienvenido a Space Equis!";
   }
@@ -205,19 +205,12 @@ public class UserController {
      * elemento del DOM que tiene id='users', o sea la tabla.
      */
     return """
-  </head>
-  <center>
-<body>
-<h1> ¡Bienvenido a Space Equis!</h1>
-</body>
-  </html>
-  <center>
+  
   <style>
   body{
     background-image:url('https://lh5.ggpht.com/-jkwbXq4_K9I/UY4n7oqYiMI/AAAAAAAAs6I/Ywh-K1bHEf4/s1600/20130511_163936.jpg');
     }
     .text
-          <style>
             #users {
               font-family: Sans-Serif;
               border-collapse: separated;
@@ -238,6 +231,14 @@ public class UserController {
               color: white;
             }
           </style>
+          <center>
+          <body>
+          <div>
+          <body>
+            <h1 style="color: white;">¡Bienvenido a Space Equis!</h1>
+          </div>
+          <h2 style="color: white;" > Miercoles </h2>
+          
           <table id='users'>
             <tr>
               <th>Id</th>
@@ -247,6 +248,8 @@ public class UserController {
               <th>Actividad</th>
               <th>Precipitaciones</th>
             </tr>
+            </body>
+          <center>
         """;
   }
 }
